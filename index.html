@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PracticaBDD</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('WRB_ENh-QivhKoJB9')
+</script>
+
+</head>
+<body>
+
+    <div class="content" id="Inicio">
+        <h1>Lista de estudiantes</h1>
+        <input type="text" name="buscarNombre" id="buscarNombre" placeholder="Buscar por nombre">
+    
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Curso</th>
+            </thead>
+            <tbody>
+                <tr><td colspan="4">Cargando datos.....</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+ <!-- Formulario -->
+  <br>
+  <br>
+<div class="container">
+<form id="form">
+  <div class="field">
+    <label for="name">name</label>
+    <input type="text" name="name" id="name">
+  </div>
+  <div class="field">
+    <label for="time">time</label>
+    <input type="text" name="time" id="time">
+  </div>
+  <div class="field">
+    <label for="email_id">email_id</label>
+    <input type="text" name="email_id" id="email_id">
+  </div>
+  <div class="field">
+    <label for="message">message</label>
+    <input type="text" name="message" id="message">
+  </div>
+
+  <input type="submit" id="button" value="Send Email" >
+</form>
+</div>
+</body>
+
+<script src="main.js"></script>
+</html>
